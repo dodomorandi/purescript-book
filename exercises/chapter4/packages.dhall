@@ -1,5 +1,6 @@
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.14.0-20210406/packages.dhall sha256:7b6af643c2f61d936878f58b613fade6f3cb39f2b4a310f6095784c7b5285879
+      https://github.com/purescript/package-sets/releases/download/psc-0.15.0-20220502/packages.dhall
+        sha256:38d347aeba9fe6359c208abe87a5cecf1ffb14294f11ad19664ae35c59b6e29a
 
 let overrides =
       { test-unit =
@@ -15,8 +16,8 @@ let overrides =
           , "js-timers"
           , "avar"
           ]
-        , repo = "https://github.com/milesfrain/purescript-test-unit.git"
-        , version = "stackless-default"
+        , repo = "https://github.com/2jt/purescript-test-unit.git"
+        , version = "es-modules"
         }
       }
 
