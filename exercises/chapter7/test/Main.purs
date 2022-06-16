@@ -2,7 +2,6 @@ module Test.Main where
 
 import Prelude
 import Test.MySolutions
-
 import Control.Monad.Writer (runWriter, tell)
 import Data.AddressBook (PhoneType(..), address, phoneNumber)
 import Data.Array ((..))
@@ -24,7 +23,6 @@ main :: Effect Unit
 main =
   runTest do
     runChapterExamples
-    {-  Move this block comment starting point to enable more tests
     suite "Exercise Group - Applicative and Effects" do
       suite "Exercise - Numeric operators that work with Maybe" do
         suite "addMaybe" do
@@ -46,6 +44,7 @@ main =
         test "divMaybe" do
           Assert.equal (Just 2)
             $ divMaybe (Just 5) (Just 2)
+
       suite "Exercise - Numeric operators that work with Apply" do
         suite "addApply" do
           test "Maybe Just" do
@@ -242,7 +241,6 @@ main =
           Assert.equal Nothing
             $ traverseUsingSequence fromNumber [ 1.0, 2.7 ]
 
--}
 runChapterExamples :: TestSuite
 runChapterExamples =
   test "Todo for book maintainers - Add tests for chapter examples" do
